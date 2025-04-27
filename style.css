@@ -1,0 +1,238 @@
+body{
+    background-image: url("/159Z_2107.w026.n002.628B.p1.628.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container{
+    width: 35rem;
+    background-color: #4947473a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.315);
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px .5px black;
+}
+
+form{
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+
+h1{
+    font-size: 2em;
+    text-align: center;
+    color: #d000ff;
+}
+
+input{
+    padding: 15px;
+    height: 20px;
+    width: 100%;
+    margin: 0px 5px 0px 5px;
+    border-radius: 50px;
+    border: none;
+    background-color: #49474700;
+    color: white;
+    outline: none;
+    font-size: 1em;
+}
+
+.button button{
+    text-align: center;
+    height: 40px;
+    width: 200px;
+    border-radius: 5px;
+    border: 2px solid #d000ff;
+    background-color: #d000ff;
+    margin-top: 20px;
+    color: white;
+    font-size: 1em;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.checkwrapper{
+    /* white-space: nowrap; */
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+    width: 100%;
+    margin-bottom: 0;
+    margin-left: 0; 
+    gap: 5px;
+}
+
+.checkwrapper label{
+    color: white;
+    margin-top: 0;
+}
+
+.checkwrapper input{
+    width: 15px;
+    height: 15px;
+    margin-top: 0;
+}
+
+.checkbox{
+    accent-color: #D000ff;
+}
+
+.option{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    
+}
+
+.forgot{
+    padding-right: 10%;
+}
+
+.forgot a{
+    font-size: clamp(0.9rem, 1.2vw, 1.1rem);
+    text-decoration: none;
+    color: #d000ff;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.inputholder{
+    display: flex;
+    gap: 30px;
+    width: 75%;
+    margin-bottom: 30px;
+    border-bottom: 1.5px solid white;
+}
+
+.user{
+    color: #d000ff;
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+.eye{
+    color: #d000ff;
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+.passholder{
+    display: flex;
+    gap: 30px;
+    height: 10%;
+    width: 75%;
+    margin-bottom: 30px;
+    border-bottom: 1.5px solid white;
+}
+
+.others{
+    color: white;
+    font-size: 1.1em;
+}
+
+.socialmedia{
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+.socialmedia i{
+    color: #D000ff;
+}
+
+.socialmedia i:hover{
+    background-color: #D000ff;
+    color:white;
+}
+
+.google{
+    font-size: 2em;
+    color: #d000ff;
+    border: 2px solid #D000ff;
+    border-radius: 50%; 
+}
+
+.fb{
+    font-size: 2em;
+    color: #d000ff;
+    border: 2px solid #D000ff;
+    border-radius: 50%;
+}
+
+
+
+@media all and (max-width:768px){
+    
+
+    h1{
+        font-size: clamp(1.9em, 8vw,3em);
+    }
+
+    .user{
+        font-size: clamp(.9em,4vw,1.2em);
+    }
+
+    .eye{
+        font-size: clamp(.9em,4vw,1.2em);
+    }
+
+    .checkwrapper{
+        font-size:clamp(12px, 2vw, 16px);
+    }
+    .forgot a{
+        font-size:clamp(12px, 2vw, 16px);
+    }
+
+    .button button{
+        width: clamp(100px,30vw,200px);
+        margin-top: 1.3rem;
+    }
+
+    .others{
+        font-size:clamp(.6rem,2vw,1.1rem);
+    }
+
+    .socialmedia{
+        gap:15px;
+    }
+
+    .google{
+        font-size:clamp(.9em,5vw,2em);
+    }
+
+    .fb{
+        font-size:clamp(.9em,5vw,2em);
+    }
+}
+
+/* @media all and (min-width:768px){
+    .container{
+        width: clamp(35rem, 5vw, 40rem);
+    }
+
+    h1{
+        font-size: clamp(1.9em, 8vw,3em);
+    }
+} */
+

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+</head>
+<body>
+    <div class="container">
+
+        <form action="">
+            <h1>Login</h1>
+
+            <div class="inputholder">
+            <input type="text" placeholder="Username" required>
+            <i class="fa-solid fa-user user"></i>
+            </div>
+
+        <div class="passholder">
+        <input type="password" class = "pass" id = "password" placeholder="password" required>
+        <i class = "fa-solid fa-eye eye" id = "showpassword"></i>
+        </div>
+
+
+        <div class="option">
+            <div class="checkwrapper">
+            <input type="checkbox" class = "checkbox" value = "check">
+            <label for="check">Remember me</label>
+            </div>
+
+            <div class="forgot">
+            <a href="">Forget password?</a>
+            </div>
+        </div>
+        
+        
+        <div class="button">
+        <button type = "submit">Sign in</button>
+        </div>
+
+        <p class = "others">-Or Sign in With-</p>
+
+        <div class="socialmedia">
+        <a href="https://accounts.google.com">
+            <i class='bx bxl-google google'></i>
+        </a>
+        <a href="https://www.facebook.com/login/">
+            <i class='bx bxl-facebook fb'></i>
+        </a>
+        </div>
+    </form>
+    </div>
+    
+
+    <script>
+
+const showpassword = document.querySelector("#showpassword");
+        const password = document.querySelector("#password");
+
+        showpassword.addEventListener("click",function(){
+            this.classList.toggle("fa-eye");
+            this.classList.toggle("fa-eye-slash");
+
+            if (password.type === "password"){
+                password.type = "text";
+            } else {
+                password.type = "password"
+            }
+        })
+    </script>
+</body>
+</html>
